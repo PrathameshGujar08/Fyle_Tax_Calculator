@@ -34,7 +34,7 @@ calculate = () => {
     }
     
 
-    if(!isNaN(totalIncome) && totalIncome > 0 && grossIncome > 0 && extraIncome > 0 && deduction > 0){
+    if(!isNaN(totalIncome) && totalIncome >= 0 && grossIncome >= 0 && extraIncome >= 0 && deduction >= 0){
         var tax = 0;
         if (totalIncome > 800000) {
             switch (age) {
